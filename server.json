@@ -1,0 +1,17 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-12-11/server.schema.json",
+  "name": "io.github.mcp-dir/capivara-mcp",
+  "title": "Capivara: Investigação Cadastral",
+  "description": "360º background dossier on a person (or company) from name + CPF: identity, contact, money-to-claim ",
+  "version": "0.1.0",
+  "repository": {
+    "url": "https://github.com/mcp-dir/capivara-mcp",
+    "source": "github"
+  },
+  "remotes": [
+    {
+      "type": "streamable-http",
+      "url": "https://api.mcp.ai/p_capivara"
+    }
+  ]
+}

@@ -1,0 +1,33 @@
+# Smithery configuration for Capivara: Investigação Cadastral
+# Schema: https://smithery.ai/docs/build/project-config
+# Remote HTTP MCP — server hosted at https://api.mcp.ai/p_capivara
+
+name: capivara-mcp
+displayName: "Capivara: Investigação Cadastral"
+description: >
+  Raio-X cadastral 360º de uma pessoa (ou empresa) a partir de nome + CPF: identidade, contato, dinheiro a receber (Valores a Receber do BC, IRPF, benefícios), crédito, antecedentes/sanções, societário, veículos e processos, num relatório único. Preço fixo por consulta (pré-pago), em 3 níveis. Hospedado pela plataforma, sem credenciais.
+
+version: 0.1.0
+license: MIT
+homepage: https://github.com/mcp-dir/capivara-mcp
+repository: https://github.com/mcp-dir/capivara-mcp
+
+tags:
+  - capivara
+  - brazil
+  - horizontal
+  - read-only
+
+# Remote HTTP MCP — sem startCommand local (servidor já hospedado)
+startCommand:
+  type: http
+  url: https://api.mcp.ai/p_capivara
+
+auth:
+  type: oauth2
+  resourceMetadataUrl: https://api.mcp.ai/p_capivara/.well-known/oauth-protected-resource
+  fallback:
+    type: agent-auth
+    description: >
+      Para clientes sem OAuth 2.1. O agente expõe uma tool authenticate(token).
+      Usuário gera o JWT em https://app.mcp.ai/agent-auth e cola no chat.

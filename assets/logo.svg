@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Capivara">
+  <!-- fundo branco -->
+  <rect width="512" height="512" rx="96" fill="#FFFFFF"/>
+  <!-- orelhas -->
+  <ellipse cx="180" cy="168" rx="40" ry="34" fill="#9B6B3F"/>
+  <ellipse cx="332" cy="168" rx="40" ry="34" fill="#9B6B3F"/>
+  <ellipse cx="180" cy="172" rx="18" ry="15" fill="#6E4623"/>
+  <ellipse cx="332" cy="172" rx="18" ry="15" fill="#6E4623"/>
+  <!-- cabeça (formato bloco arredondado, bem capivara) -->
+  <rect x="120" y="156" width="272" height="232" rx="96" fill="#C28E5A"/>
+  <!-- topo da cabeça mais claro -->
+  <ellipse cx="256" cy="214" rx="120" ry="62" fill="#CE9B66"/>
+  <!-- focinho/maxilar -->
+  <ellipse cx="256" cy="330" rx="132" ry="92" fill="#B07E4D"/>
+  <!-- olhos -->
+  <circle cx="198" cy="250" r="17" fill="#3D2812"/>
+  <circle cx="314" cy="250" r="17" fill="#3D2812"/>
+  <circle cx="204" cy="244" r="5.5" fill="#FFFFFF"/>
+  <circle cx="320" cy="244" r="5.5" fill="#FFFFFF"/>
+  <!-- nariz grande (marca da capivara) -->
+  <ellipse cx="256" cy="344" rx="86" ry="52" fill="#8A5E33"/>
+  <ellipse cx="224" cy="340" rx="14" ry="18" fill="#3D2812"/>
+  <ellipse cx="288" cy="340" rx="14" ry="18" fill="#3D2812"/>
+  <!-- boca -->
+  <path d="M230 384 q26 24 52 0" fill="none" stroke="#5E3D1E" stroke-width="9" stroke-linecap="round"/>
+</svg>
